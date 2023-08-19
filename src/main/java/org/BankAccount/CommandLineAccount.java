@@ -4,13 +4,7 @@ import java.util.Scanner;
 
 public class CommandLineAccount {
     public static void main(String[] args) {
-
-
-
        commandLineDisplay();
-
-
-
     }
 
     public static void commandLineDisplay(){
@@ -34,8 +28,8 @@ public class CommandLineAccount {
         System.out.println("Please Type Your First Deposit: ");
         balance = scanner.nextDouble();
 
-        String response = String.format("Hello [%s] , Account Have Been Created Thanks By Your Choice" +
-                "Your Agency is [%s]%n,Account [%d] and Balance [$ %.2f] is already to use it",clientName,bankAgency,accountNumber,balance);
+        String response = String.format("Hello [%s] , Account Have Been Created. Thanks By Your Choice%n" +
+                "Your Agency is [%s], Account [%d] and Balance [$ %.2f] is already to use it !",clientName,bankAgency,accountNumber,balance);
         System.out.println(response);
     }
 }
